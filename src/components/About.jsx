@@ -5,6 +5,7 @@ const About = (props)=> {
         <>
             <h2>Esto es About</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cum harum, asperiores nulla eaque libero sequi? Voluptatem iste doloribus ab quae, accusantium corporis sed vero nam aliquam obcaecati assumenda neque.</p>
+            <p>{props.info}</p>
         </>
     )
 }
