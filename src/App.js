@@ -6,7 +6,6 @@ import About from './components/About';
 import { Route, Routes } from 'react-router-dom';
 import Users from './components/Users';
 
-
 function App() {
   return (
     <div className="App">
