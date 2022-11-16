@@ -1,3 +1,8 @@
-.Menu{
+.Menu:hover{
     background-color: #83c314;
+    grid-column-gap: 10px;
+}
+.Home:hover{
+    font-family: fantasy;
+    font-weight: bold;
 }
