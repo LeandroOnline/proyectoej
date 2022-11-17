@@ -6,3 +6,17 @@
     font-family: fantasy;
     font-weight: bold;
 }
+
+.Letra {
+    color: #000000;
+  }
+
+.body {
+    background-color: rgb(58, 58, 58);
+  }
+  
+.button {
+    border-color: red;
+    background-color: #83c314;
+    color : rgb(72, 21, 150)
+}
