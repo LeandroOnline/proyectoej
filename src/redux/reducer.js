@@ -5,7 +5,7 @@ const initialState = {
 }
 
 const rootReducer = (state = initialState, action) => {
-    switch (action.type) {
+    switch (action) {
         case GET_USERS:
             return {
                 ...state,

@@ -1,5 +1,5 @@
 import React from "react";
-import { connect } from "react-redux";
+import { connect, useSelector } from "react-redux";
 import { getUsers } from "../redux/actions";
 
 class Users extends React.Component {
@@ -21,6 +21,7 @@ class Users extends React.Component {
 }
 
 const mapStateToProps = (state) => {
+  //console.log(state);
   return {
     users: state.users,
   };
@@ -32,5 +33,12 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-//export default Users;
+// export default Users;
 export default connect(mapStateToProps, mapDispatchToProps)(Users);
+
+//mapStateToProps=
+//       { users:   state.users }
+//                  state --> store.getState()
+//                            store desde <Provider store={store}> --> store --> reducer --> initialState
+// <Users users= {state.users}              getUsers= {store.dispatch(getUsers())} />
+// <Users users= {store.getState().users}   getUsers= {store.dispatch(getUsers())} />
