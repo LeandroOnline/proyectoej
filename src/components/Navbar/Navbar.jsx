@@ -7,9 +7,10 @@ const Navbar = (props) => {
     return (
         <div className={NStyle.body}>
             <h3 >Este es el Navbar</h3>
-            <button><NavLink to="/" className={NStyle.Letra}>Home</NavLink><br/></button><br/>
-            <button><NavLink to="/about" className={NStyle.Letra}>ABOUT</NavLink><br/> </button><br/>
-            <button><NavLink to="/users" className={NStyle.Letra}>Users</NavLink><br/> </button><br/>
+            <NavLink to="/" className={NStyle.Letra}><button>Home<br/></button></NavLink><br/>
+            <NavLink to="/about" className={NStyle.Letra}><button>ABOUT<br/> </button></NavLink><br/>
+            <NavLink to="/users" className={NStyle.Letra}><button>Users<br/> </button></NavLink><br/>
+            {/* <button><NavLink to="/userdetail" className={NStyle.Letra}>UsersDetails</NavLink><br/> </button><br/> */}
             <hr/>
         </div>
     )

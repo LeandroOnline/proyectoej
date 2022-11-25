@@ -12,11 +12,10 @@
   }
 
 .body {
-    background-color: rgb(58, 58, 58);
+    background-color: rgba(0, 0, 0, 0.494);
   }
   
-.button {
-    border-color: red;
-    background-color: #83c314;
-    color : rgb(72, 21, 150)
+button {
+    border-radius: 5px;
 }
+
