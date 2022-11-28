@@ -1,6 +1,8 @@
 //Initial types
 export const GET_USERS = 'GET_USERS';
 export const GET_USER_DETAIL = 'GET_USER_DETAIL';
+export const CREATE_USER = 'CREATE_USER';
+export const NEW_DETAIL= "NEW_DETAIL";
 
 //Actions
 export const getUsers = () => {
@@ -18,3 +20,8 @@ export const getUserDetail= (id) => {
 			.then((data) => dispatch({ type: GET_USER_DETAIL, payload: data }));
 	};
 };
+
+
+export const createUser= (user) => {
+	return {type: CREATE_USER, payload: user};
+}

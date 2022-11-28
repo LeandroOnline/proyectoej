@@ -9,8 +9,8 @@ const UserDetail = (props) => {
 
     useEffect(() => {
         props.getUserDetail(id)
-    },[])
-    console.log(props)
+    },[id,props])
+    
     return(
         <>
         <p>UserDetail aqui:</p>
