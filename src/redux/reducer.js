@@ -1,9 +1,12 @@
+// initials types
 import { CREATE_USER, GET_USERS, GET_USER_DETAIL } from "./actions";
+
 const initialState = {
     users: [],
     userDetail: {},
     myUsers:[],
 }
+
 const rootReducer = (state = initialState, action) => {
     switch (action.type) {
         case GET_USERS:
