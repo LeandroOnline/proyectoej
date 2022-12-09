@@ -1,5 +1,4 @@
 import React from "react";
-import 
 const About = (props)=> {
     return(
         <>

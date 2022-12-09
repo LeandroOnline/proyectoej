@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import styles from "./Navbar.module.css";
 
 const Navbar = (props) => {
     return (
-        <div >
-            <h3 >The Navbar</h3>
-            <NavLink to="/" >Home</NavLink>
+        <div className={styles.nav}>
+            <NavLink to="/">Home</NavLink>
             <NavLink to="/about" >ABOUT</NavLink>
             <NavLink to="/users" >Users</NavLink>
             <hr />
